@@ -6,14 +6,14 @@ Link to paper: https://arxiv.org/abs/2208.03138
 
 ## This is the command line interface for the patch-based matching of two iris images.
 
-All code was written to run on a GPU, but in the case none is available it should run fine on the CPU.
+All code was written to run on a GPU, but in the case none is available it should run fine on a CPU.
 
 ## Download the trained model
 
 The model can be downloaded here:
 https://drive.google.com/file/d/1w5nEesvF--j9nYslPOHnDKTwcIk4WqS1/view?usp=sharing
 
-Place the model (named wacv_model.h5) in a folder named ./Model/ folder such that the final path is ./Model/wacv_model.h5 
+Place the model (named wacv_model.h5) in a folder named ./Model/ such that the final path is ./Model/wacv_model.h5 
 
 ## Creating the environment:
 
