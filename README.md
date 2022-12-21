@@ -9,7 +9,7 @@ All code was written to run on a GPU, but in the case none is available it shoul
 The model can be downloaded here:
 https://drive.google.com/file/d/1w5nEesvF--j9nYslPOHnDKTwcIk4WqS1/view?usp=sharing
 
-Place the model (named wacv_model.h5) in the ./Model/ folder such that the final path is ./Model/wacv_model.h5 
+Place the model (named wacv_model.h5) in a folder named ./Model/ folder such that the final path is ./Model/wacv_model.h5 
 
 ## Creating the environment:
 
