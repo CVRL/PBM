@@ -1,5 +1,9 @@
 # Official repo for WACV 2023 xIA workshop PBM paper
 
+## Human Saliency-Driven Patch-based Matching for Interpretable Post-mortem Iris Recognition
+
+Link to paper: https://arxiv.org/abs/2208.03138
+
 ## This is the command line interface for the patch-based matching of two iris images.
 
 All code was written to run on a GPU, but in the case none is available it should run fine on the CPU.
@@ -48,3 +52,15 @@ By default, the output visualizations are saved in ./workdir/patch-based/output/
 ## Output scores
 
 The scorefile generated will contain four columns; the probe image, the gallery image, whether it is genuine or not (0 for different eyes and 1 for a genuine pair) and the distance measure which can be used for plotting.
+
+## Citation
+
+If you used this code in your work, please cite:
+````
+@article{boyd2022human,
+  title={Human Saliency-Driven Patch-based Matching for Interpretable Post-mortem Iris Recognition},
+  author={Boyd, Aidan and Moreira, Daniel and Kuehlkamp, Andrey and Bowyer, Kevin and Czajka, Adam},
+  journal={arXiv preprint arXiv:2208.03138},
+  year={2022}
+}
+````
