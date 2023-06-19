@@ -30,7 +30,7 @@ After detecting these features, pairs of features that are matched as being the 
 </p>
 
 ## Results Summary
-<img src="figures/results.png" width=50% align=right>
+<img src="figures/results.png" width=40% align=right>
 <p>
 From the ROC curves to the right, the best performing method on the held-out testing set (dataset 2) is HDBSIF. This is consistent with the results for post-mortem iris recognition. However, HDBSIF is not human-interpretable, as it gives no indication of what features were important in the matching.
 </p>
