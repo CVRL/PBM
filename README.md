@@ -29,6 +29,19 @@ A MaskRCNN instance segmentation architecture with a ResNet50 backbone is traine
 After detecting these features, pairs of features that are matched as being the most similar are linked (as shown by the dark blue lines in the right figure above). The genuine pair (a) shows parallel lines linking features resulting in a match, whereas the impostor pair (b) has crossing lines and a non-match result. The human examiner can quickly verify the algorithm’s result by examining the proposed matching features.
 </p>
 
+## Results Summary
+<img src="figures/results.png" width=50% align=right>
+<p>
+From the ROC curves to the right, the best performing method on the held-out testing set (dataset 2) is HDBSIF. This is consistent with the results for post-mortem iris recognition. However, HDBSIF is not human-interpretable, as it gives no indication of what features were important in the matching.
+</p>
+<p>
+The best performing method that supplies justification of the decision is SIFT-RSIFT-128. However, because SIFT-RSIFT-128 uses 128 keypoints on each iris, the matching visualization may become cluttered and the interpretability is reduced due to the large number of extracted regions. Moreover, as in typical SIFT-like approaches, keypoints are represented by their central locations and compulsorily regular neighborhoods (usually circular or rectangular, thus ignoring the shapes of the compared regions during matching), making them not anatomy-driven and less human-interpretable. When the number of keypoints in the SIFT-RSIFT approach is reduced to be the same as for PBM, and thus its results are less cluttered, the performance decreases significantly to an AUC of 0.715 (see SIFT-RSIFT-10). Lastly, SIFT-RSIFT keypoints are not iris inspired and thus may not appear salient to a human examiner.
+</p>
+<p>
+In our proposed PBM method, the feature extractor is trained from human-annotated iris patches used in matching. In addition to generating more human-understandable features, this apparently brings a set of very discriminative features. Surprisingly, the PBM approach outperforms deep learning-based method (TLPIM), commercial (VeriEye) and Daugman-like approaches (USITv3.0), while also displaying interpretablity.
+</p>
+
+
 ## This is the command line interface for the patch-based matching of two iris images.
 
 All code was written to run on a GPU, but in the case none is available it should run fine on a CPU.
