@@ -1,6 +1,12 @@
-# Official repo for WACV 2023 xIA workshop PBM paper
+# Human Saliency-Driven Patch-based Matching for Interpretable Post-mortem Iris Recognition
 
-## Human Saliency-Driven Patch-based Matching for Interpretable Post-mortem Iris Recognition
+<p align="center">
+Aidan Boyd, Daniel Moreira, Andrey Kuehlkamp, Kevin Bowyer, Adam Czajka <br>
+University of Notre Dame, Notre Dame IN 46556, USA <br>
+{aboyd3,dhenriq1,akuehlka,kwb,aczajka}@nd.edu <br>
+<a href="https://arxiv.org/abs/2208.03138">Official Paper</a> <br> <br>
+<img src="figures/main_figure.png">
+</p>
 
 Link to paper: https://arxiv.org/abs/2208.03138
 
