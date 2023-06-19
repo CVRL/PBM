@@ -17,6 +17,11 @@ Forensic iris recognition, as opposed to live iris recognition, is an emerging r
 The first publicly-available dataset for post-mortem iris recognition is the Warsaw BioBase Postmortem Iris v2.0 (Warsaw v2.0). It consists of 1,200 near-infrared (NIR) post-mortem images from 37 unique cadavers in a mortuary environment. The PMI ranges from 5 to 800 hours. Two additional datasets were used in this work, both acquired in an operational medical examiner’s setting. The first of these, dataset 1, contains 621 NIR images from 134 cadavers (254 distinct irises). Images were acquired in sessions of varying PMI, up to a maximum of 9 sessions and 284 hours after death. The second dataset, dataset 2, consists of 5, 770 NIR images from 259 subjects. The longest PMI in this dataset is 1,674 hours (69 days), captured at 53 different PMI sessions. Warsaw v2.0, dataset 1 and dataset 2 are entirely subject-disjoint. Also, while dataset 1 and dataset 2 were collected at the same institution, Warsaw v2.0 was collected at a different institution. Warsaw v2.0 is combined with dataset 1 to create what is referred to as the “combined dataset” used for training and validation, and to collect human decisions and annotations, as described in Sec. 3. Dataset 2 is held out during training and validation and acts as a subject-disjoint test set.
 
 ## Methodology
+<p align=center>
+  <img src="figures/features.png" width=35%>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="figures/matching.png" width=35%>
+</p>
 <p>
 A MaskRCNN instance segmentation architecture with a ResNet50 backbone is trained to detect individual features present in the iris. In addition, a confidence score is also returned and can be used to rank the detected features. Two examples of iris images with detected features can be seen in the left figure above.
 </p>
