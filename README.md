@@ -48,8 +48,7 @@ All code was written to run on a GPU, but in the case none is available it shoul
 
 ### Download the trained model
 
-The model can be downloaded here:
-https://drive.google.com/file/d/1w5nEesvF--j9nYslPOHnDKTwcIk4WqS1/view?usp=sharing
+The model can be downloaded here: (Box Drive)[https://notredame.box.com/s/vohyjgdrzs2t03jo2cq5db3j999www51] | (Google Drive)[https://drive.google.com/file/d/1w5nEesvF--j9nYslPOHnDKTwcIk4WqS1/view?usp=sharing]
 
 Place the model (named wacv_model.h5) in a folder named ./Model/ such that the final path is ./Model/wacv_model.h5 
 
